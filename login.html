@@ -9,10 +9,46 @@
 </head>
 
 <body>
+    <div class="overlay">
+        <div class="login-section__container">
+            <div class="login-section__header">
+                <h3 class="login-section__heading">
+                    Забыли пароль?
+                </h3>
+            </div>
+            <div class="login-section__main login-section__main--request">
+                <p class="login-section__text">
+                    Пожалуйста, укажите e-mail c которым вы участвовали в чемпионате АртМастерс и мы вышлем вам
+                    пароль
+                </p>
+                <form action="" class="login-section__form">
+                    <fieldset class="login-section__form-fieldset">
+                        <label for="login-email-input--forgot" class="login-section__form-label">
+                            AM-ID (E-mail)
+                        </label>
+                        <div class="login-section__form-col">
+                            <input placeholder="Введите E-mail" id="login-email-input--forgot" type="email" required
+                                name="request-email" class="input login-section__form-input">
+                            <p class="login-section__form-input-text">
+                                E-mail которым вы участвовали в Чемпионате АртМастерс
+                            </p>
+                        </div>
+                    </fieldset>
+                    <div class="login-section__row">
+                        <button type="submit" class="btn login-section__form-submit-btn">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
     <header class="login-header">
         <div class="wrapper login-header__wrapper">
             <img src="./assets/img/logo.png" alt="Ассоциация ArtMasters" class="logo login-header__logo">
-            <hgroup class="hgroup">
+            <hgroup class="hgroup hgroup--login">
                 <h1 class="hgroup__heading">
                     Ассоциация ArtMasters
                 </h1>
@@ -53,7 +89,7 @@
                                     type="password" required class="input login-section__form-input">
                             </fieldset>
                             <div class="login-section__row">
-                                <a href="./request.html" class="login-section__link">
+                                <a href="./request.html" class="login-section__link login-section__link--forgot">
                                     Забыли пароль?
                                 </a>
                                 <button type="submit" class="btn login-section__form-submit-btn">
@@ -74,6 +110,7 @@
             </p>
         </div>
     </footer>
+    <script src="./scripts/popup.js"></script>
 </body>
 
 </html>

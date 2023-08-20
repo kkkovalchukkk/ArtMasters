@@ -1,4 +1,8 @@
-        $.fn.setCursorPosition = function (pos) {
+
+     
+
+    
+    $.fn.setCursorPosition = function (pos) {
             if ($(this).get(0).setSelectionRange) {
                 $(this).get(0).setSelectionRange(pos, pos);
             } else if ($(this).get(0).createTextRange) {
