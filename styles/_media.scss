@@ -113,6 +113,8 @@
     height: auto;
   }
   .sidebar {
+    max-height: none;
+    height: 100%;
     .link-btn,
     .header__sign-out-link {
       display: initial;
